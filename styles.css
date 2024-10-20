@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Latar belakang hitam untuk keseluruhan */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+}
+
+.menu, .confirmation {
+    background-color: #333; /* Latar belakang menu */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin: 10px 0;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444; /* Warna latar belakang input */
+    color: #fff; /* Warna teks input */
+}
+
+input[type="text"]::placeholder {
+    color: #bbb; /* Warna placeholder input */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transisi halus saat hover */
+}
+
+button:hover {
+    background-color: #555; /* Warna saat hover */
+}
+
+.confirmation {
+    display: none; /* Tersembunyi secara default */
+}

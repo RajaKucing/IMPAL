@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISP Package Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main package selection menu -->
+        <div class="menu" id="main-menu">
+            <h3>Super Seru</h3>
+            <ol>
+                <li>1. 80GB/28hr/100rb</li>
+                <li>2. 100GB/28hr/120rb</li>
+                <li>3. 125GB/28hr/150rb</li>
+                <li>4. 150GB/28hr/180rb</li>
+                <li>5. 170GB/28hr/200rb</li>
+                <li>6. Paket Hadiah 50GB (valid 7 hari) - Cocok untuk teman atau keluarga</li>
+                <!-- Menu 7 dihapus -->
+            </ol>
+            <div class="input-container">
+                <input type="text" placeholder="Input option number" id="user-input">
+            </div>
+            <div class="buttons">
+                <button onclick="cancel()">Batal</button>
+                <button onclick="submit()">Kirimkan</button>
+            </div>
+        </div>
+
+        <!-- Confirmation screen after selecting a package -->
+        <div class="confirmation" id="confirmation" style="display: none;">
+            <p id="confirmation-message">Anda akan membeli Paket Super Seru 125GB Internet/28 hr Rp150.000?</p>
+            <p>1. Beli</p>
+            <p>9. Kembali</p>
+            <div class="input-container">
+                <input type="text" placeholder="" id="confirmation-input">
+            </div>
+            <div class="buttons">
+                <button onclick="buy()">Kirim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
